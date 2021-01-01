@@ -1,0 +1,4 @@
+include  ":api"
+include  ":eureka-server"
+include  ":microservices:user-service"
+include  ":microservices:composite-service"
