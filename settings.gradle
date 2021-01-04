@@ -1,4 +1,5 @@
 include  ":api"
+include  ":api-gateway"
 include  ":eureka-server"
 include  ":microservices:user-service"
 include  ":microservices:composite-service"
