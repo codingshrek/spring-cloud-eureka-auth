@@ -8,7 +8,7 @@ docker-compose up -d --build
 docker-compose scale composite-service=2 user-service=3
 
 **Run :**  
-curl -X GET http://localhost:8080/composite-service/user | jq
+curl -X GET http://localhost:8080/composite-service/user | jq  
 curl -X GET http://localhost:8080/composite-service/user | jq
 
 **Output :**  
