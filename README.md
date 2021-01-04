@@ -1,6 +1,6 @@
 # spring-cloud-eureka-auth
 
-### Spring Cloud with Eureka Discovery Server
+### Spring Cloud with Eureka Discovery Server , Netflix Ribbon Load Balancer
 
 **Setup :**  
 ./gradlew clean build  
