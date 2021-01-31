@@ -7,6 +7,15 @@ app:
   eureka-password: p
   eureka-server: localhost
 
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8081/auth/realms/springboot_realm
+          jwk-set-uri: http://localhost:8081/auth/realms/springboot_realm/protocol/openid-connect/certs
+
 eureka:
   client:
     serviceUrl:

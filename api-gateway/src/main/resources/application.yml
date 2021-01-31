@@ -4,6 +4,8 @@ spring.application.name: api-gateway
 
 app.eureka-server: localhost
 
+
+
 eureka:
   client:
     serviceUrl:
@@ -17,6 +19,17 @@ eureka:
 ribbon.ServerListRefreshInterval: 5000
 
 ribbon.NFLoadBalancerPingInterval: 5
+
+
+
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8081/auth/realms/springboot_realm
+          jwk-set-uri: http://localhost:8081/auth/realms/springboot_realm/protocol/openid-connect/certs
 
 spring.cloud.gateway.routes:
 
